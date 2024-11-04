@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- https://codepen.io/frankeno/pen/QWmmxQb -->
+<!-- https://freefrontend.com/css-text-animations/ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onur Arda Özcan - Teknolojilerim</title>
+    <link rel="shortcut icon" href="img/img-2.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="img/hakkimda/bootstrap.png" type="image/x-icon">
+</head>
+
+<style>
+    /* image gallery */
+    img {
+        width: 15rem;
+        height: 15rem;
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    #gallery-modal .modal-img {
+        width: 100%;
+    }
+
+    #gallery-modal-2 .modal-img {
+        width: 100%;
+    }
+
+    @media (max-width: 768px) {
+        .gallery {
+            margin-left: 50%;
+            transform: translate(-50%, 0%);
+        }
+    }
+
+    /* Aside */
+    aside .row .col-sm-3 .card {
+        width: 150px;
+        height: 100px;
+    }
+
+    aside .card .card-body {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    aside .card img {
+        width: 50px;
+        height: 50px;
+        filter: grayscale(100%);
+        /* Resmi gri tonlara çevir */
+        transition: filter 0.3s ease;
+        /* Yumuşak geçiş sağla */
+    }
+
+    aside .card img:hover {
+        filter: grayscale(0%);
+        /* Hover sırasında resmi orijinal haline döndür */
+    }
+
+
+
+    /* Animasyon */
+    /* Google Fonts */
+    @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+    /* Cursor */
+    .cursor {
+        position: relative;
+        width: 24em;
+        margin: 0 auto;
+        border-right: 2px solid rgba(255, 255, 255, .75);
+        font-size: 30px;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        transform: translateY(-50%);
+    }
+
+    /* Animation */
+    .typewriter-animation {
+        animation:
+            typewriter 5s steps(50) 1s 1 normal both,
+            blinkingCursor 500ms steps(50) infinite normal;
+    }
+
+    @keyframes typewriter {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    @keyframes blinkingCursor {
+        from {
+            border-right-color: rgba(255, 255, 255, .75);
+        }
+
+        to {
+            border-right-color: transparent;
+        }
+    }
+</style>
+
+<body class="min-vh-100 d-flex flex-column justify-content-end">
+
+    <nav class="navbar navbar-expand-lg bg-light navbar-light">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Onur Arda Özcan.</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Anasayfa</a></li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Profil</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Ben</a></li>
+                                <li><a class="dropdown-item" href="projelerim.html">Projelerim</a></li>
+                                <li><a class="dropdown-item" href="#">İletişim</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Görüşler</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Bloglar</a></li>
+                    <li class="nav-item"><a href="https://www.google.com/" class="nav-link">Çıkış</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header
+        style="background: url(img/projects.jpg); height: 40vh; width: 100%; background-position: center center; background-size: cover;"
+        class="d-flex align-items-center justify-content-center">
+        <p class="text-uppercase fw-light display-3 mt-5 pt-4">Teknolojiler</p>
+
+    </header>
+
+    <p class="cursor typewriter-animation mt-5">Kullandığım Teknolojiler</p>
+
+    <!-- Ders28 - Image-Gallery -->
+    <section class="gallery d-flex justify-content-center">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 ">
+                <div class="col p-3">
+                    <img src="img/img-1.jpg" class="gallery-item border border-5" data-bs-toggle="modal"
+                        data-bs-target="#gallery-modal">
+                </div>
+                <div class="col p-3">
+                    <img src="img/img-2.jpg" class="gallery-item border border-5" data-bs-toggle="modal"
+                        data-bs-target="#gallery-modal-2">
+                </div>
+                <div class="col p-3">
+                    <img src="img/img-1.jpg" class="gallery-item border border-5" data-bs-toggle="modal"
+                        data-bs-target="#gallery-modal">
+                </div>
+                <div class="col p-3">
+                    <img src="img/proje-1.jpg" class="gallery-item border border-5" data-bs-toggle="modal"
+                        data-bs-target="#gallery-modal">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/img-1.jpg" class="modal-img" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="gallery-modal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/img-2.jpg" class="modal-img" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Katkıda Bulunanlar -->
+    <aside class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-6 mt-1">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/hakkimda/html.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 mt-1">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/hakkimda/css.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 mt-1">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/hakkimda/js.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 mt-1">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/hakkimda/bootstrap.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 mt-1">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/hakkimda/bootstrap-2.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 mt-1">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/hakkimda/html-2.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 mt-1">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/hakkimda/angular.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 mt-1">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/hakkimda/js-2.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </aside>
+
+
+    <footer class="text-center py-4 mt-auto">
+        <div class="container">
+            <p><a href="gizlilik.html">Gizlilik Politikası</a> <a href="cerez.html">Çerez Politikası</a> <a
+                    href="SSS">SSS</a></p>
+            <p>&copy;2035, Onur Arda ÖZCAN. <a target="_blank" href="https://getbootstrap.com/">Bootstrap.com</a>
+                altyapısı ve güvencesiyle.</p>
+            <div>
+                <a href="#" class="text-dark me-2"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-dark me-2"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="text-dark"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

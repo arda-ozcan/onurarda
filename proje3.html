@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onur Arda Özcan - Projelerim</title>
+    <link rel="shortcut icon" href="img/img-2.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <!-- Bs İcons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Font Aw. İcons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <!-- Font Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        .product-title {
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+        .price {
+          font-size: 2rem;
+          color: #0056b3;
+        }
+        /* Carousel Indicators Customization */
+        .carousel-indicators button {
+          width: 60px !important;
+          height: 60px !important;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          border: none;
+        }
+        .carousel-indicators .active {
+          border: 2px solid #0056b3;
+        }
+    
+        .btn-custom {
+          background-color: #0056b3;
+          color: white;
+        }
+        .action-buttons button {
+          margin-left: 10px;
+        }
+    
+        .carousel-item img {
+          width: 100% !important;
+          height: 300px !important;
+          object-fit: cover;
+        }
+      </style>
+</head>
+<body class="min-vh-100 d-flex flex-column justify-content-end">
+   
+    <nav class="navbar navbar-expand-lg bg-light navbar-light">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Onur Arda Özcan.</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Anasayfa</a></li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Profil</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Ben</a></li>
+                                <li><a class="dropdown-item" href="projelerim.html">Projelerim</a></li>
+                                <li><a class="dropdown-item" href="#">İletişim</a></li>
+                            </ul>
+                        </div>    
+                    </li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Mesajlar</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Bloglar</a></li>
+                    <li class="nav-item"><a href="https://www.google.com/" class="nav-link">Çıkış</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header style="background: url(img/img-2.jpg); height: 40vh; width: 100%; background-position: center center; background-size: cover;" class="d-flex align-items-center justify-content-center">
+        <p class="text-uppercase fw-light display-3">Projelerim</p>
+    </header>
+  
+    <main class="container my-5">
+        <!-- Başlık -->
+        <h2 class="text-center text-danger">Nova IT Academy Web Tasarım Projesi</h2>
+    
+        <!-- Proje İçeriği -->
+        <div class="row mt-4">
+            <!-- Sol Kısım (Proje Resmi) -->
+            <div class="col-md-8">
+                <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/proje-3.jpg" class="d-block w-100" >
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/proje-1.jpg" class="d-block w-100" >
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/proje-2.jpg" class="d-block w-100" >
+                      </div>
+                    </div>
+          
+          
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                    <div class="carousel-indicators">
+                      <!-- Indicators with images as background -->
+                      <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active" aria-current="true" style="background-image: url(img/proje-3.jpg);"></button>
+                      <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1" style="background-image: url(img/proje-1.jpg);"></button>
+                      <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2" style="background-image: url(img/proje-2.jpg);"></button>
+                    </div>
+                  </div>
+            </div>
+    
+            <!-- Sağ Kısım (Proje Bilgileri) -->
+            <div class="col-md-4">
+                <h4>Projeye Ait Bilgiler</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <i class="bi bi-person-fill"></i> Projeye Ait Bilgiler
+                    </li>
+                    <li class="list-group-item">
+                        <i class="bi bi-code-slash"></i> HTML5, CSS3, Bootstrap 5, Responsive
+                    </li>
+                    <li class="list-group-item">
+                        <i class="bi bi-laptop"></i> Web Tasarım, Yönetim Paneli, Mobil
+                    </li>
+                    <li class="list-group-item">
+                        <i class="bi bi-globe"></i> 
+                        <a href="http://www.deneme.com" target="_blank" class="text-decoration-none">
+                            www.deneme.com
+                        </a>
+                    </li>
+                </ul>
+                <div class="mt-4 d-flex">
+                    <a href="proje2.html" class="btn btn-outline-secondary me-1">Önceki Proje</a>
+                    <a href="proje3.html" class="btn btn-outline-secondary">Sonraki Proje</a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+    </main>
+    
+        
+
+    <!-- Footer -->
+    <footer class="text-center py-4 mt-auto">
+        <div class="container">
+            <p><a href="gizlilik.html">Gizlilik Politikası</a> <a href="cerez.html">Çerez Politikası</a></p>
+            <p>&copy;2035, Onur Arda ÖZCAN. <a target="_blank" href="https://getbootstrap.com/">Bootstrap.com</a> altyapısı ve güvencesiyle.</p>
+            <div>
+                <a href="#" class="text-dark me-2"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-dark me-2"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="text-dark"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+</body>
+</html>

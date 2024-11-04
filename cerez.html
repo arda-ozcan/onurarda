@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Çerez Politikası</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    
+    /* Mavi arka planlı üst başlık */
+    .header {
+      background-color: #1976d2;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Her bölüm için stil */
+    #section1, #section2, #section3, #section4, #section5 {
+      padding-top: 50px;
+      height: 500px;
+    }
+
+    /* Sol altta sabit duran yuvarlak ev ikonu */
+    .home-icon {
+      bottom: 20px;
+      left: 20px;
+      height: 50px;
+      width: 50px;
+      background-color: #1976d2;
+      color: white;
+      padding: 15px;
+      font-size: 24px;
+    }
+
+    /* Sticky menu */
+    .sticky-menu {
+      position: -webkit-sticky; /* Safari */
+      position: sticky;
+      top: 20px; /* Menünün yapışma noktası (20px yukarıdan) */
+    }
+  </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="0" tabindex="0">
+
+  <nav class="navbar navbar-expand-lg bg-light navbar-light">
+    <div class="container">
+        <a href="index.html" class="navbar-brand">Onur Arda Özcan.</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Anasayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Profil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Mesajlar</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Bloglar</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.google.com/" class="nav-link">Çıkış</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  <!-- Üst kısım: Mavi arka planlı başlık -->
+  <div class="header">
+    <h2>Çerez Politikası</h2>
+    <p>Çerez Politikası Nedir? Çerez politikası, bir web sitesinin çerezler hakkında bilgi verdiği ve kullandığı bir belgedir. Bir web sitesinin çerezler hakkında nasıl bilgi topladığını, çerezleri nasıl kullandığını ve kullanıcıların çerezleri nasıl yönetebileceğini açıklar.</p>
+  </div>
+
+  <!-- Ana içerik -->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-4">
+        <!-- Menü sabit değil, sayfayla birlikte hareket edecek -->
+        <nav id="navbar-example" class="sticky-menu">
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link active" href="#section1">Çerez Politikası</a>
+            <a class="nav-link" href="#section2">Çerez Nedir?</a>
+            <a class="nav-link" href="#section3">Çerezlerle İşlenen Kişisel Veriler</a>
+            <a class="nav-link" href="#section4">Çerezlerin Amaçları</a>
+            <a class="nav-link" href="#section5">Çerezlerin Yönetimi</a>
+          </nav>
+        </nav>
+      </div>
+
+      <div class="col-md-8">
+        <div id="section1" class="shadow-lg p-4 mb-5">
+          <h4>Çerez Politikası</h4>
+          <p>Son güncellenme: 16/10/2024. Biz, Şirket Adı, olarak güvenliğinize önem veriyoruz...</p>
+        </div>
+        <div id="section2" class="shadow-lg p-4 mb-5">
+          <h4>Çerez Nedir?</h4>
+          <p>Çerezler, kullanıcıların web sitelerini daha verimli bir şekilde kullanabilmeleri için cihazlarına kaydedilen küçük dosyalardır...</p>
+        </div>
+        <div id="section3" class="shadow-lg p-4 mb-5">
+          <h4>Çerezlerle İşlenen Kişisel Veriler</h4>
+          <p>Çerezler ile işlenen kişisel veriler 6698 sayılı Kişisel Verilerin Korunması Kanunu’na uygun olarak işlenir...</p>
+        </div>
+        <div id="section4" class="shadow-lg p-4 mb-5">
+          <h4>Çerezlerin Amaçları</h4>
+          <p>Çerezler, kullanıcıların web sitesini daha verimli kullanmalarına olanak sağlar...</p>
+        </div>
+        <div id="section5" class="shadow-lg p-4 mb-5">
+          <h4>Çerezlerin Yönetimi</h4>
+          <p>Kullanıcılar çerezleri nasıl yöneteceklerine kendileri karar verebilirler...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sabit yuvarlak ev ikonu -->
+  <a href="index.html" class="home-icon rounded-circle btn btn-primary d-flex justify-content-center align-items-center text-white position-fixed">
+    <i class="bi bi-house"></i>
+  </a>
+
+
+  <footer class="text-center py-4">
+    <div class="container">
+        <p>
+            <a href="gizlilik.html">Gizlilik Politikası</a>
+            <a href="cerez.html">Çerez Politikası</a>
+        </p>
+        <p>&copy;2035, Onur Arda ÖZCAN. <a target="_blank" href="https://getbootstrap.com/">Bootstrap.com</a> altyapısı ve güvencesiyle.</p>
+        <div>
+            <a href="#" class="text-dark me-2"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-dark me-2"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="text-dark"><i class="bi bi-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
